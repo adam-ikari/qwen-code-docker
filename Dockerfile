@@ -15,8 +15,3 @@ RUN npm install -g @qwen-code/qwen-code --no-update-notifier --no-fund && \
 # `--some-arg` 会被直接传递给 `qwen` 命令。
 ENTRYPOINT ["qwen"]
 
-# 步骤 4: 设置默认命令 (CMD)
-# 如果在 `docker run` 时没有提供任何参数，此默认命令将会被执行。
-# 在这里，我们让它默认显示帮助信息，这是一个很好的实践。
-CMD ["--help"]
-
